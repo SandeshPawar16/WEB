@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sticky Notes Application</title>
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+<div class="container">
+    <div class="title-box">
+        <input type="text" placeholder="Enter title...">
+        <select>
+            <option value="grocery">Grocery</option>
+            <option value="reminder">Reminder</option>
+        </select>
+    </div>
+    <div class="color-picker">
+        <input type="color" id="note-color" value="#ffcc00">
+        <input type="color" id="text-color" value="#000000">
+    </div>
+    <textarea placeholder="Enter details..."></textarea>
+    <button onclick="addNote()">Add Note</button>
+</div>
+<div id="notes-container"></div>
+<script src="script1.js"></script>
+</body>
+</html>
